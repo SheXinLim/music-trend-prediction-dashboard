@@ -6,24 +6,24 @@ This project showcases an end-to-end pipeline from data collection and feature e
 Overall, I’ve shown that artist popularity and release timing are pivotal in predicting song virality. My model’s high performance and the dashboard’s interactive charts provide a powerful tool for A&R teams to identify and track emerging trends.
 
 ## Tech Stack
-**Data Processing & Storage:** Python, Pandas, NumPy, SQL, PostgreSQL
-**Machine Learning/AI Libraries:** scikit-learn, LightGBM, XGBoost, and Optuna for hyperparameter tuning
-**Visualization & Dashboard:** Plotly, Dash (or Streamlit for a web app)
+- **Data Processing & Storage:** Python, Pandas, NumPy, SQL, PostgreSQL
+- **Machine Learning/AI Libraries:** scikit-learn, LightGBM, XGBoost, and Optuna for hyperparameter tuning
+- **Visualization & Dashboard:** Plotly, Dash (or Streamlit for a web app)
 
 ## Key Insights
 ### 1. Artist Popularity Dominates
 My feature importance plot shows that artist_popularity is by far the strongest predictor of whether a track goes viral. This indicates that well-known artists heavily influence a song’s chance of becoming a hit.
 
-### Release Timing Matters
+### 2. Release Timing Matters
 release_month and days_since_release also contribute significantly to virality predictions, suggesting seasonality (certain months may boost a track’s visibility) and that recent releases can be more likely to surge in popularity.
 
-### High Model Performance
+### 3. High Model Performance
 My LightGBM model achieves high accuracy (around 97%), along with strong precision, recall, and F1-scores. This means it both catches most viral songs (high recall) and rarely misclassifies non-viral tracks as viral (high precision).
 
-### Actionable Dashboard Visualizations
+### 4. Actionable Dashboard Visualizations
 The bar chart comparing track popularity by artist highlights which artists are currently driving hits, helping A&R teams quickly spot rising stars or confirm which established artists continue to perform well.
  
-### Robust, Not Overfitting
+### 5. Robust, Not Overfitting
 Cross-validation (around 95.9% accuracy) confirms that the model generalizes well to unseen data, reducing the risk of overfitting.
 
 
